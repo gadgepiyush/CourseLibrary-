@@ -1,0 +1,60 @@
+{%extends 'base.html'%}
+
+{%block title%}Contact us{%endblock title%}
+
+{%block body%}
+
+<center>
+  <div class="mt-3">
+  <h2 style="color: #333333; background: #FFFFFF; text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);">
+    Contact Us
+  </h2>
+  </div>
+</center>
+
+
+<div class="container content-container contact" style="padding-right: 5em; background:#e3f2fd ">
+        <div class="row" style="margin-top: 2em;">
+
+              <div class="col-md-6" style="border: solid 1px #C2C2C2; border-radius: 10px; padding: 3em 3em 3em 3em;">
+                <form name="infoForm">
+                  <div class="form-group">
+                    <label for="fullName"> <h3 style="font-size: 20px; font-weight: 400;"> Contacting For </h3> </label>
+                    <input type="text" name="fullName" id="Name" style="border-radius: 10px;" class="form-control" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="fullName"> <h3 style="font-size: 20px; font-weight: 400;"> Full Name </h3> </label>
+                    <input type="text" name="fullName" id="fullName" style="border-radius: 10px;" class="form-control"required />
+                  </div>
+                  <div  class="form-group">
+                    <label for="phone"> <h3 style="font-size: 20px; font-weight: 400;"> Phone Number </h3> </label>
+                    <input type="text" name="Phone" id="phone" style="border-radius: 10px;" class="form-control" onBlur="validateNumber()" required />
+                  </div>
+                  <div  class="form-group">
+                    <label for="Email"> <h3 style="font-size: 20px; font-weight: 400;"> Email </h3> </label>
+                    <input type="email" name="mail" id="Email" style="border-radius: 10px;" class="form-control" onblur="validateEmail()" required/>
+                  </div>
+
+                  <div  class="form-group">
+                    <label for="Specification"> <h3 style="font-size: 20px; font-weight: 400;"> Your Message </h3> </label>
+                    <textarea name="spec" id="Specification" style="border-radius: 10px; height: 10em;" class="form-control"></textarea><br>
+                  </div>
+                  <center><input type="submit" name="submitBtn" value="Submit" class="btn btn-primary" onclick="validateCheckBox()"></center>
+                </form>
+
+
+
+              </div>
+
+               <div class="col-md-6">
+
+                <h6 class="contact-info mt-1" style="font-size: 28px; font-weight: 400;"> Contact Information :- </h6>
+                <p class="contact-info" > Mobile Number: 8007648309 <br> Email ID: piyushgadge800@gmail.com </p><br>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15224.387107815479!2d78.3322228!3d17.4550815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x16e1878d01ded942!2sSchool%20of%20Computer%20and%20Information%20Sciences!5e0!3m2!1sen!2sin!4v1663400279772!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              </div>
+        </div>
+      </div>
+
+{%endblock body%}
